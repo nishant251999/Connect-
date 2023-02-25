@@ -1,0 +1,27 @@
+body {
+  padding: 5px;
+  height: 150px;
+  width: 200px;
+  background-color: rgba(151, 155, 145, 0.541);
+}
+body div {
+  display: flex;
+  justify-content: center;
+}
+body .heading {
+  height: 30%;
+  background-color: azure;
+  border: 10px red;
+  color: rgb(79, 79, 148);
+}
+body .counter {
+  font-size: large;
+  height: 50%;
+}
+body .counter p {
+  vertical-align: auto;
+}
+body .btn {
+  padding: 10px;
+  height: 20%;
+}/*# sourceMappingURL=popup.css.map */
