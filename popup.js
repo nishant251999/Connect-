@@ -7,7 +7,7 @@ btn.addEventListener("click", async ()=> {
     const response = await chrome.tabs.sendMessage(tab.id, {
         btnClicked: true
     });
-    console.log(response);
+    // console.log(response);
     if(response) {
         document.querySelector(".counter p").textContent = `Total Connected : ${response.count}`;
     }
