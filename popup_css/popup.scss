@@ -1,13 +1,12 @@
 body {
     padding: 5px;
     height: 150px;
-    width: 200px;
+    width: 220px;
     background-color: rgba(151, 155, 145, 0.541);
 
     div {
         display: flex;
         justify-content: center;
-        
     }
     .heading {
         height: 30%;
@@ -16,11 +15,14 @@ body {
         color: rgb(79, 79, 148);
     }
 
-    .counter {
-        font-size: large;
+    .counterDiv {
+        display: block;
+        text-align: center;
+        font-size: medium;
         height: 50%;
-        p {
-            vertical-align: auto;
+
+        .counter {
+            font-size: large;
         }
     }
 

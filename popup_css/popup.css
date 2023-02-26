@@ -1,7 +1,7 @@
 body {
   padding: 5px;
   height: 150px;
-  width: 200px;
+  width: 220px;
   background-color: rgba(151, 155, 145, 0.541);
 }
 body div {
@@ -14,12 +14,14 @@ body .heading {
   border: 10px red;
   color: rgb(79, 79, 148);
 }
-body .counter {
-  font-size: large;
+body .counterDiv {
+  display: block;
+  text-align: center;
+  font-size: medium;
   height: 50%;
 }
-body .counter p {
-  vertical-align: auto;
+body .counterDiv .counter {
+  font-size: large;
 }
 body .btn {
   padding: 10px;
