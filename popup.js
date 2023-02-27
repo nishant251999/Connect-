@@ -1,14 +1,23 @@
-const btn = document.querySelector(".btn");
-btn.addEventListener("click", async ()=> {
-
+const startBtn = document.querySelector(".btn button");
+const counter = document.querySelector(".counter");
+( async ()=> {
     const queryOptions = {active: true, lastFocusedWindow: true};
     const [tab] = await chrome.tabs.query(queryOptions);
-
-    const response = await chrome.tabs.sendMessage(tab.id, {
-        btnClicked: true
+    
+    startBtn.addEventListener("click", async ()=> {
+        const port = chrome.tabs.connect(tab.id, {
+            name: "connect+"
+        });
+        startBtn.setAttribute("disabled", "true");
+        startBtn.style.pointerEvents = "none";
+        port.postMessage({
+            start: true 
+        });
+        
+        port.onMessage.addListener((msg)=> {
+            counter.textContent = msg.count;
+        });
     });
-    // console.log(response);
-    if(response) {
-        document.querySelector(".counter p").textContent = `Total Connected : ${response.count}`;
-    }
-});
+})();
+
+

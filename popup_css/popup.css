@@ -1,7 +1,7 @@
 body {
   padding: 5px;
   height: 150px;
-  width: 200px;
+  width: 220px;
   background-color: rgba(151, 155, 145, 0.541);
 }
 body div {
@@ -10,18 +10,28 @@ body div {
 }
 body .heading {
   height: 30%;
-  background-color: azure;
-  border: 10px red;
+  background-color: rgb(136, 238, 238);
+  border-radius: 15px;
+}
+body .heading h2 {
+  margin: auto;
   color: rgb(79, 79, 148);
 }
-body .counter {
-  font-size: large;
-  height: 50%;
+body .counterDiv {
+  display: block;
+  text-align: center;
+  font-size: medium;
 }
-body .counter p {
-  vertical-align: auto;
+body .counterDiv .counter {
+  font-size: large;
 }
 body .btn {
   padding: 10px;
   height: 20%;
+}
+body .btn button {
+  width: 50%;
+  font-size: medium;
+  border-radius: 5px;
+  border: none;
 }/*# sourceMappingURL=popup.css.map */

@@ -1,31 +1,41 @@
 body {
     padding: 5px;
     height: 150px;
-    width: 200px;
+    width: 220px;
     background-color: rgba(151, 155, 145, 0.541);
 
     div {
         display: flex;
         justify-content: center;
-        
     }
     .heading {
+        h2 {   
+            margin: auto;
+            color: rgb(79, 79, 148);
+        }
         height: 30%;
-        background-color: azure;
-        border: 10px red;
-        color: rgb(79, 79, 148);
+        background-color: rgb(136, 238, 238);
+        border-radius: 15px;
     }
 
-    .counter {
-        font-size: large;
-        height: 50%;
-        p {
-            vertical-align: auto;
+    .counterDiv {
+        display: block;
+        text-align: center;
+        font-size: medium;
+
+        .counter {
+            font-size: large;
         }
     }
 
     .btn {
         padding: 10px;
         height: 20%;
+        button {
+            width: 50%;
+            font-size: medium;
+            border-radius: 5px;
+            border: none;
+        }
     }
 }
