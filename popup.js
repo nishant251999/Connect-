@@ -1,21 +1,19 @@
-const btn = document.querySelector(".btn");
-let counter = document.querySelector(".counter");
-let btnState = true;
+const startBtn = document.querySelector(".btn button");
+const counter = document.querySelector(".counter");
 ( async ()=> {
     const queryOptions = {active: true, lastFocusedWindow: true};
     const [tab] = await chrome.tabs.query(queryOptions);
     
-    btn.addEventListener("click", async ()=> {
+    startBtn.addEventListener("click", async ()=> {
         const port = chrome.tabs.connect(tab.id, {
             name: "connect+"
         });
-        if(btnState) {
-            btnState = false;
-            port.postMessage({
-                start: true 
-            });
-        }
-
+        startBtn.setAttribute("disabled", "true");
+        startBtn.style.pointerEvents = "none";
+        port.postMessage({
+            start: true 
+        });
+        
         port.onMessage.addListener((msg)=> {
             counter.textContent = msg.count;
         });

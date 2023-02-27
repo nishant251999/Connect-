@@ -10,15 +10,17 @@ body div {
 }
 body .heading {
   height: 30%;
-  background-color: azure;
-  border: 10px red;
+  background-color: rgb(136, 238, 238);
+  border-radius: 15px;
+}
+body .heading h2 {
+  margin: auto;
   color: rgb(79, 79, 148);
 }
 body .counterDiv {
   display: block;
   text-align: center;
   font-size: medium;
-  height: 50%;
 }
 body .counterDiv .counter {
   font-size: large;
@@ -26,4 +28,10 @@ body .counterDiv .counter {
 body .btn {
   padding: 10px;
   height: 20%;
+}
+body .btn button {
+  width: 50%;
+  font-size: medium;
+  border-radius: 5px;
+  border: none;
 }/*# sourceMappingURL=popup.css.map */
