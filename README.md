@@ -16,4 +16,5 @@ Clicks "Connect"/"Follow" button automatically for all people in LinkedIn search
 3. Voila! You will see "Connect"/"Follow" buttons clicking automatically after certain interval.
 
 !!! NOTE !!!
+
 If Clicking on start button doesn't work for the first time, try to reload page and then click "Start".
