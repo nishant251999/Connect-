@@ -1,11 +1,13 @@
 # Connect+
 
-Clicks "Connect"/"Follow" button automatically for all people in LinkedIn search results.
+Clicks "Connect"/"Follow" button automatically for all people in LinkedIn search results. 
+
+This extension also auto handles all the popups (like "Add note", "How do you know each other?") that come on clicking the "Connect" button.
 
 # How to Install
 
 1. Download repo as ZIP file. Extract in any location.
-2. Open "Extensions" from chrome options menu and turn on developer mode.
+2. Open "Extensions" from chrome three dot options menu and turn ON developer mode.
 3. Click "Load Unpacked".
 4. Select the extracted folder in pt 1.
 
